@@ -1,19 +1,94 @@
 <!-- @format -->
 
 <!DOCTYPE html>
-<!-- self-contained 태그, 자기 스스로 정보를 제공하기에 닫는 부분이 필요없다 -->
-<html>
+<html lang="en">
   <head>
-    <!-- head is not for the user, is giving information to browser-->
-    <meta charset="utf-8" />
-    <meta name="author" content="minimal" />
-    <mata name="description" content="Welcome to my kakao clone" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>This is my title</title>
-    <link href="styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/0ac70a1dad.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Chats | Kakao Clone</title>
   </head>
   <body>
-    <h1>This is my big title</h1>
-    <h6>This is my small title</h6>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:53</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="far fa-clock"></i>
+        <i class="fas fa-volume-up"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-ban"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">Chats</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="far fa-comment"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
+    </header>
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chats__chat chat">
+          <a href="chat.html">
+            <div class="chat__column">
+              <img
+                src="images/avatar.jpeg"
+                alt=""
+                class="chat__avatar g-avatar"
+              />
+              <div class="chat__content">
+                <span class="chat__username">Minimal</span>
+                <span class="chat__preview">What's up?</span>
+              </div>
+            </div>
+            <div class="chat__column">
+              <span class="chat__timestamp">Yesterday</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
