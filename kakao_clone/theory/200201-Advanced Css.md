@@ -11,7 +11,7 @@
 # transformations
 
 - element들의 모습이 변하는 효과
-- 회전, 크기 변경 등 다양하게 가능
+- 회전, 크기 변경 등 다양하게 가능, rotate, scale
 - transition과 함께 쓰일 때 효과는 2배
 
 # animation
