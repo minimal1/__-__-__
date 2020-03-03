@@ -26,11 +26,9 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-        <span class="header__icon">
-          <a href="index.html">
-            <i class="fas fa-arrow-left"></i>
-          </a>
-        </span>
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left fa-2x"></i>
+        </a>
         <h1 class="header__title">Maximum</h1>
       </div>
       <div class="header__header-column">
@@ -42,39 +40,39 @@
         </span>
       </div>
     </header>
-    <ul class="messages">
-      <span class="messages__timestamp">Friday, January 11, 2019</span>
-      <li class="messages__received message">
-        <img src="images/avatar.jpeg" class="message__avatar" />
-        <div class="message__content">
-          <span class="message__username">Maximum</span>
-          <span class="message__text">What's up</span>
-        </div>
-        <span class="message__timestamp">15:19</span>
-      </li>
-      <li class="messages__sent message">
-        <span class="message__timestamp">15:19</span>
-        <div class="message__content">
-          <span class="message__text">good</span>
-        </div>
-      </li>
-      <li class="messages__received message">
-        <img src="images/avatar.jpeg" class="message__avatar" />
-        <div class="message__content">
-          <span class="message__username">Maximum</span>
-          <span class="message__text">Me, too</span>
-        </div>
-        <span class="message__timestamp">15:19</span>
-      </li>
-    </ul>
+    <main class="chat">
+      <ul class="chat__messages">
+        <span class="chat__timestamp">Friday, January 11, 2019</span>
+        <li class="incoming-message message">
+          <img src="images/avatar.jpeg" class="g-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__author">Maximum</span>
+            <span class="message__bubble">What's up</span>
+          </div>
+          <span class="message__timestamp">15:19</span>
+        </li>
+        <li class="outgoing-message message">
+          <span class="message__timestamp">15:19</span>
+          <div class="message__content">
+            <span class="message__bubble">good</span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/avatar.jpeg" class="g-avatar message__avatar" />
+          <div class="message__content">
+            <span class="message__author">Maximum</span>
+            <span class="message__bubble">Me, too</span>
+          </div>
+          <span class="message__timestamp">15:19</span>
+        </li>
+      </ul>
+    </main>
     <div class="write">
       <div class="write__column">
-        <span class="write__icon">
-          <i class="far fa-plus-square"></i>
-        </span>
+        <i class="far fa-plus-square"></i>
       </div>
       <div class="write__column">
-        <input type="text" placeholder="Send a message" />
+        <input type="text" placeholder="Send a message" class="write__input" />
       </div>
       <div class="write__column">
         <span class="write__icon">
