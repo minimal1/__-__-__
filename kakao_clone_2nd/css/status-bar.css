@@ -1,0 +1,22 @@
+/** @format */
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  opacity: 0.7;
+}
+
+.status-bar .status-bar__clock {
+  font-size: 14px;
+}
+
+.status-bar i {
+  font-size: 14px;
+}
+
+.status-bar .status-bar__battery-level {
+  font-size: 14px;
+  margin-left: 5px;
+}

@@ -1,0 +1,40 @@
+/** @format */
+
+.nav {
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  padding: 15px 40px;
+  background-color: #fcfcfc;
+  border-top: 1px solid #f8f8f8;
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav i {
+  font-size: 20px;
+}
+
+.nav .nav__link {
+  position: relative;
+}
+
+.nav .nav__badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #e65f3e;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 8px;
+}
