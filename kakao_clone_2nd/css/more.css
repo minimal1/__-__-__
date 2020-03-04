@@ -1,0 +1,54 @@
+/** @format */
+
+.more .more__header-list,
+.more .more__suggestions-list {
+  margin-top: 30px;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.more .more__btn,
+.more .more__suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.more .more__btn-icon {
+  font-size: 26px;
+}
+
+.more .more__btn-title {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.more .more__suggestions {
+  padding: 20px 0px;
+  margin-top: 20px;
+  border-top: 1px solid #f8f8f8;
+}
+
+.more .more__title {
+  font-size: 14px;
+}
+
+.suggestion .suggestion__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fae102;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+.suggestion .suggestion__title {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.6;
+}
