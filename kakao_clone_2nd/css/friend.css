@@ -37,7 +37,7 @@
 .friend .friend__status,
 .friend .friend__email,
 .friend .friend__bottom-text,
-.chat__timestamp {
+.friend .chat__timestamp {
   font-size: 10px;
   opacity: 0.6;
 }
