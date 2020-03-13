@@ -5,22 +5,36 @@
   <head>
     <title>Start</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <div class="js-clock clock">
-      <h1>00:00:00</h1>
-    </div>
-    <form class="js-greetingsForm form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h2 class="js-greetings greetings"></h2>
-    <form class="js-toDosForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDolist"></ul>
-    <script src="clock.js"></script>
-    <script src="greetings.js"></script>
-    <script src="todos.js"></script>
+    <header class="header">
+      <div class="header__column">
+        <h1 class="header__title">MINIMALs</h1>
+      </div>
+      <div class="header__column">
+        <span class="js-weather header__weather"></span>
+        <span class="js-city header__city"></span>
+      </div>
+    </header>
+    <main class="main">
+      <div class="js-clock main__clock">
+        <h1>00:00:00</h1>
+      </div>
+      <form class="js-greetingsForm main__greetingsForm">
+        <input type="text" placeholder="What is your name?" />
+      </form>
+      <h2 class="js-greetings main__greetings"></h2>
+      <form class="js-toDosForm main__toDosForm">
+        <span class="main__sub-title">What are you going to do today?</span>
+        <input type="text" class=" main__toDoInput" placeholder="" />
+      </form>
+      <ul class="js-toDolist main__toDolist"></ul>
+    </main>
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/todos.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>
