@@ -1,17 +1,17 @@
 /** @format */
 
-import routes from '../routes';
+import routes from "../routes";
 
-export const getJoin = (req, res) => res.render('join', { pageTitle: 'Join' });
+export const getJoin = (req, res) => res.render("join", { pageTitle: "Join" });
 
 export const postJoin = (req, res) => {
   const {
-    body: { name, email, password, password2 }
+    body: { name, email, password, password2 },
   } = req;
 
   if (password !== password2) {
     res.status(400);
-    res.render('join', { pageTitle: 'Join' });
+    res.render("join", { pageTitle: "Join" });
   } else {
     // To Do: Register user
     // To Do: Log user in
@@ -20,11 +20,11 @@ export const postJoin = (req, res) => {
 };
 
 export const getLogin = (req, res) =>
-  res.render('login', { pageTitle: 'Login' });
+  res.render("login", { pageTitle: "Login" });
 
 export const postLogin = (req, res) => {
   const {
-    body: { email, password }
+    body: { email, password },
   } = req;
 
   // To Do: Authenticate the info
@@ -37,8 +37,8 @@ export const logout = (req, res) => {
 };
 
 export const editProfile = (req, res) =>
-  res.render('editProfile', { pageTitle: 'Edit Profile' });
+  res.render("editProfile", { pageTitle: "Edit Profile" });
 export const changePassword = (req, res) =>
-  res.render('changePassword', { pageTitle: 'Change Password' });
+  res.render("changePassword", { pageTitle: "Change Password" });
 export const userDetail = (req, res) =>
-  res.render('userDetail', { pageTitle: 'User Detail' });
+  res.render("userDetail", { pageTitle: "User Detail" });
