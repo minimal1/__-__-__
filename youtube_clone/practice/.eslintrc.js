@@ -17,5 +17,6 @@ module.exports = {
   rules: {
     "no-console": "off",
     "object-shorthand": "off",
+    "no-else-return": "off",
   },
 };
