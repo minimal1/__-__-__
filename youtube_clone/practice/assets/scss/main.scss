@@ -15,7 +15,33 @@ body {
 
 main {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   min-height: 70vh;
+}
+
+video {
+  max-width: 850px;
+}
+
+button,
+input {
+  width: 100%;
+  padding: 7px 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: $black;
+  border-radius: 5px;
+  max-width: 320px;
+  &::placeholder {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+button {
+  background-color: #3a5998;
+  color: white;
+  border: none;
 }
