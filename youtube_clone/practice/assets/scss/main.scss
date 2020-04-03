@@ -20,12 +20,10 @@ main {
   min-height: 70vh;
 }
 
-video {
-  max-width: 850px;
-}
-
 button,
-input {
+input:not([type="file"]),
+textarea,
+.fileUpload {
   width: 100%;
   padding: 7px 10px;
   border: none;
@@ -33,7 +31,9 @@ input {
   font-weight: 600;
   color: $black;
   border-radius: 5px;
+  background-color: white;
   max-width: 320px;
+  resize: none;
   &::placeholder {
     font-weight: 300;
     color: rgba(0, 0, 0, 0.7);
@@ -41,7 +41,16 @@ input {
 }
 
 button {
-  background-color: #3a5998;
+  background-color: #03a9f4;
   color: white;
   border: none;
+}
+
+button.delete {
+  background-color: $dark-red;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
 }

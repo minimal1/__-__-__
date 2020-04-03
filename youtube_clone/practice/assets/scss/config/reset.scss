@@ -125,12 +125,19 @@ table {
   border-spacing: 0;
 }
 
+*,
+input {
+  box-sizing: border-box;
+}
+
 a {
   all: unset;
   cursor: pointer;
 }
 
-input {
+input,
+button,
+textarea {
   box-sizing: border-box;
   border: none;
   &:active,
