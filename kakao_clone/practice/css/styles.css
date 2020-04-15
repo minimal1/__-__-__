@@ -1,17 +1,17 @@
 /** @format */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap');
-@import 'reset.css';
-@import 'status-bar.css';
-@import 'header.css';
-@import 'nav-bar.css';
-@import 'friend.css';
-@import 'friends.css';
-@import 'find.css';
-@import 'more.css';
-@import 'settings.css';
-@import 'chat.css';
-@import 'chats.css';
-@import 'mobile.css';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+@import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
+@import "chats.css";
+@import "mobile.css";
 
 * {
   box-sizing: border-box;
@@ -20,8 +20,8 @@ body {
   background-color: white;
   padding: 10px 20px;
   color: #020202;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 a {
