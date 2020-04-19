@@ -7,6 +7,8 @@ import bodyParser from "body-parser";
 import cookieParser from "cookie-parser";
 import session from "express-session";
 import passport from "passport";
+import MongoStore from "connect-mongo";
+import mongoose from "mongoose";
 import globalRouter from "./routers/globalRouter";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouters";
@@ -15,7 +17,7 @@ import "./passport";
 import { localMiddleware } from "./middlewares";
 
 const app = express();
-const { SECRET } = process.env;
+const CookieStore = MongoStore(session);
 
 app.use(helmet());
 app.set("view engine", "pug");
@@ -28,9 +30,10 @@ app.use(morgan("dev"));
 
 app.use(
   session({
-    secret: SECRET,
+    secret: process.env.COOKIE_SECRET,
     resave: true,
     saveUninitialized: false,
+    store: new CookieStore({ mongooseConnection: mongoose.connection }),
   })
 );
 

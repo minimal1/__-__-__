@@ -6,6 +6,7 @@ const JOIN = "/join";
 const LOGIN = "/login";
 const LOGOUT = "/logout";
 const SEARCH = "/search";
+const ME = "/me";
 
 // User url
 const USERS = "/users";
@@ -19,6 +20,16 @@ const UPLOAD = "/upload";
 const VIDEO_DETAIL = "/:id";
 const EDIT_VIDEO = "/:id/edit";
 const DELETE_VIDEO = "/:id/delete";
+
+// Github login
+
+const GITHUB = "/auth/github";
+const GITHUB_CALLBACK = "/auth/github/callback";
+
+// Facebook Login
+
+const KAKAKO = "/auth/kakao";
+const KAKAKO_CALLBACK = "/auth/kakao/callback";
 
 const routes = {
   home: HOME,
@@ -59,6 +70,11 @@ const routes = {
       return DELETE_VIDEO;
     }
   },
+  github: GITHUB,
+  githubCallBack: GITHUB_CALLBACK,
+  kakao: KAKAKO,
+  kakaoCallBack: KAKAKO_CALLBACK,
+  me: ME,
 };
 
 export default routes;
