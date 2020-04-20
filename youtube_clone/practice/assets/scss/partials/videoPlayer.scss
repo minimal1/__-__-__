@@ -1,6 +1,7 @@
 /** @format */
 
 .videoPlayer {
+  max-width: 850px;
   position: relative;
   &:hover {
     .videoPlayer__controls {
@@ -8,7 +9,8 @@
     }
   }
   video {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
   }
 
   .videoPlayer__controls {
