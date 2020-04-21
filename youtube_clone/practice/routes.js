@@ -22,14 +22,17 @@ const EDIT_VIDEO = "/:id/edit";
 const DELETE_VIDEO = "/:id/delete";
 
 // Github login
-
 const GITHUB = "/auth/github";
 const GITHUB_CALLBACK = "/auth/github/callback";
 
-// Facebook Login
-
+// Kakao Login
 const KAKAKO = "/auth/kakao";
 const KAKAKO_CALLBACK = "/auth/kakao/callback";
+
+// API
+const API = "/api";
+const REGISTER_VIEW = "/:id/view";
+const ADD_COMMENT = "/:id/comment";
 
 const routes = {
   home: HOME,
@@ -75,6 +78,9 @@ const routes = {
   kakao: KAKAKO,
   kakaoCallBack: KAKAKO_CALLBACK,
   me: ME,
+  api: API,
+  registerView: REGISTER_VIEW,
+  addComment: ADD_COMMENT,
 };
 
 export default routes;
