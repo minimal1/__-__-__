@@ -45,11 +45,11 @@ export const getUpload = (req, res) =>
 export const postUpload = async (req, res) => {
   const {
     body: { title, description },
-    file: { path },
+    file: { location },
   } = req;
 
   const newVideo = await Video.create({
-    fileUrl: path,
+    fileUrl: location,
     title: title,
     description: description,
     creator: req.user.id,
@@ -126,7 +126,7 @@ export const postRegisterView = async (req, res) => {
   const {
     params: { id },
   } = req;
-  console.log(id);
+
   try {
     const video = await Video.findById(id);
     video.views += 1;
